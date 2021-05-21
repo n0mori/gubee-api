@@ -1,0 +1,20 @@
+insert into market (id, name) values (1, 'Ecommerce');
+insert into market (id, name) values (2, 'ERP');
+insert into market (id, name) values (3, 'Lojista que não desejam possuir ecommerce');
+insert into market (id, name) values (4, 'Loja fisica');
+insert into market (id, name) values (5, 'Telecom');
+insert into market (id, name) values (6, 'Venda direta');
+insert into market (id, name) values (7, 'Mobile First');
+insert into market (id, name) values (8, 'Digital Onboarding');
+
+insert into technology (id, name) values (1, 'Java 10');
+insert into technology (id, name) values (2, 'Kotlin');
+insert into technology (id, name) values (3, 'Kafka');
+insert into technology (id, name) values (4, 'Event Stream');
+insert into technology (id, name) values (5, 'Redis');
+insert into technology (id, name) values (6, 'MongoDB');
+insert into technology (id, name) values (7, 'NodeJS');
+insert into technology (id, name) values (8, 'Big Data Analytics');
+insert into technology (id, name) values (9, 'Hadoop');
+insert into technology (id, name) values (10, 'Pig');
+insert into technology (id, name) values (11, 'Cassandra');
