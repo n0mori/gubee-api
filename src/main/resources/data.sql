@@ -18,3 +18,33 @@ insert into technology (id, name) values (8, 'Big Data Analytics');
 insert into technology (id, name) values (9, 'Hadoop');
 insert into technology (id, name) values (10, 'Pig');
 insert into technology (id, name) values (11, 'Cassandra');
+
+insert into product (id, name, description) values (1, 'Gubee Integrador', 'Ferramenta de integração para marketplaces');
+insert into product (id, name, description) values (2, 'Gubee Fretes', 'Ferramenta para gestão e calculo de fretes' );
+insert into product (id, name, description) values (3, 'Gubee AntiFraude', 'Ferramenta especialistas em detecção e prevenção à fraude');
+
+insert into product_market (product_id, market_id) values ( 1, 1 );
+insert into product_market (product_id, market_id) values ( 1, 2 );
+insert into product_market (product_id, market_id) values ( 1, 3 );
+insert into product_market (product_id, market_id) values ( 2, 1 );
+insert into product_market (product_id, market_id) values ( 2, 2 );
+insert into product_market (product_id, market_id) values ( 2, 4 );
+insert into product_market (product_id, market_id) values ( 3, 1 );
+insert into product_market (product_id, market_id) values ( 3, 5 );
+insert into product_market (product_id, market_id) values ( 3, 6 );
+insert into product_market (product_id, market_id) values ( 3, 7 );
+insert into product_market (product_id, market_id) values ( 3, 8 );
+
+insert into product_stack (product_id, technology_id) values ( 1, 1 );
+insert into product_stack (product_id, technology_id) values ( 1, 2 );
+insert into product_stack (product_id, technology_id) values ( 1, 3 );
+insert into product_stack (product_id, technology_id) values ( 1, 4 );
+insert into product_stack (product_id, technology_id) values ( 1, 5 );
+insert into product_stack (product_id, technology_id) values ( 1, 6 );
+insert into product_stack (product_id, technology_id) values ( 2, 7 );
+insert into product_stack (product_id, technology_id) values ( 2, 6 );
+insert into product_stack (product_id, technology_id) values ( 3, 8 );
+insert into product_stack (product_id, technology_id) values ( 3, 9 );
+insert into product_stack (product_id, technology_id) values ( 3, 3 );
+insert into product_stack (product_id, technology_id) values ( 3, 10 );
+insert into product_stack (product_id, technology_id) values ( 3, 11 );

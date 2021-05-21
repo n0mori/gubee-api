@@ -28,16 +28,16 @@ public class Product {
   @ManyToMany
   @JoinTable(
       name = "product_market",
-      joinColumns = @JoinColumn(name = "market_id"),
-      inverseJoinColumns = @JoinColumn(name = "product_id")
+      joinColumns = @JoinColumn(name = "product_id"),
+      inverseJoinColumns = @JoinColumn(name = "market_id")
   )
   private List<Market> targetMarket;
 
   @ManyToMany()
   @JoinTable(
       name = "product_stack",
-      joinColumns = @JoinColumn(name = "technology_id"),
-      inverseJoinColumns = @JoinColumn(name = "product_id")
+      joinColumns = @JoinColumn(name = "product_id"),
+      inverseJoinColumns = @JoinColumn(name = "technology_id")
   )
   private List<Technology> stack;
 

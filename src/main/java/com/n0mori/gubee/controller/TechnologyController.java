@@ -3,7 +3,6 @@ package com.n0mori.gubee.controller;
 import com.n0mori.gubee.model.Technology;
 import com.n0mori.gubee.repository.TechnologyRepository;
 import java.util.List;
-import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -26,12 +25,7 @@ public class TechnologyController {
 
   @GetMapping("/{id}")
   public Technology getTechnology(@PathVariable("id") Integer id) {
-    Optional<Technology> technology = technologyRepository.findById(id);
-
-    if (technology.isEmpty()) {
-      throw new ResponseStatusException(HttpStatus.NOT_FOUND);
-    }
-
-    return technology.get();
+    return technologyRepository.findById(id).orElseThrow(() -> new ResponseStatusException(
+        HttpStatus.NOT_FOUND));
   }
 }
